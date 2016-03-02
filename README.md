@@ -16,8 +16,9 @@ How to Use
 Simple as fuck. Snag a copy of the required files using Git and run the script.</br>
 </br>
 You can run the script from your terminal specifying a download URL for the source tarball by typing:</br>
-<code>git clone https://github.com/imanex/acpica-macosx/ --depth=1 -b master <br>.
-./buildACPICA.sh [URL-Goes-Here]</code></br>
+<code>git clone https://github.com/imanex/acpica-macosx/ --depth=1 -b master </code></br>
+<code>cd ./acpica-macosx</code></br>
+<code>./buildACPICA.sh [URL-Goes-Here]</code></br>
 </br>
 You can find the source pacages hosted on the ACPICA website hosted <a href='https://www.acpica.org/downloads/'>here</a>.</br>
 <code>https://www.acpica.org/downloads/</code>
