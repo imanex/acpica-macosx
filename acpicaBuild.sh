@@ -38,12 +38,14 @@ then
 
     if [[ $ext == "gz" ]]
     then
-      tar -xvf $filename && tmpdir=`echo "$filename" | cut -d'.' -f1` && cd $tmpdir/generate/unix && unzip $startdir/resource.001 && $startdir
+      tar -xvf $filename && tmpdir=`echo "$filename" | cut -d'.' -f1` && cd $tmpdir/generate/unix\
+      && unzip $startdir/resource.001 && $startdir
     fi
 
     if [[ $ext == "zip" ]]
     then
-      unzip $filename && tmpdir=`echo $filename | cut -d'.' -f1` && cd $tmpdir/generate/unix && unzip $startdir/resource.001 && cd $startdir
+      unzip $filename && tmpdir=`echo $filename | cut -d'.' -f1` && cd $tmpdir/generate/unix\
+      && unzip $startdir/resource.001 && cd $startdir
     fi
 
     make
